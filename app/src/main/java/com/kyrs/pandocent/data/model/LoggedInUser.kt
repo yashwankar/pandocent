@@ -1,4 +1,4 @@
-package com.kyrs.chowkidar.data.model
+package com.kyrs.pandocent.data.model
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

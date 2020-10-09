@@ -1,6 +1,7 @@
-package com.kyrs.chowkidar.ui.login
+package com.kyrs.pandocent.ui.login
 
 import android.app.Activity
+import android.content.Intent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -15,7 +16,7 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
 
-import com.kyrs.chowkidar.R
+import com.kyrs.pandocent.R
 
 class LoginActivity : AppCompatActivity() {
 
@@ -106,10 +107,15 @@ class LoginActivity : AppCompatActivity() {
                 "$welcome $displayName",
                 Toast.LENGTH_LONG
         ).show()
+        startActivity(Intent(this, homepage_activity::class.java))
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
         Toast.makeText(applicationContext, errorString, Toast.LENGTH_SHORT).show()
+    }
+
+    fun navigate(view: View) {
+        startActivity(Intent(this, homepage_activity::class.java))
     }
 }
 

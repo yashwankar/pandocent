@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "com.kyrs.chowkidar"
+        applicationId "com.kyrs.pandocent"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1

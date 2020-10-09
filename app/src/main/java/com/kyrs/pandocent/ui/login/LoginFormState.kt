@@ -1,4 +1,4 @@
-package com.kyrs.chowkidar.ui.login
+package com.kyrs.pandocent.ui.login
 
 /**
  * Data validation state of the login form.

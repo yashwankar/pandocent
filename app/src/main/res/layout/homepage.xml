@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#32C59B">
+    android:background="@drawable/gradient_bg">
 
     <ImageView
         android:id="@+id/usr_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="136dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/usr_img" />
 
     <ImageButton
         android:id="@+id/bell"
@@ -24,7 +24,7 @@
         android:background="#00FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/search_bar"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@android:drawable/ic_popup_reminder" />
+        android:src="@android:drawable/ic_popup_reminder" />
 
     <ImageButton
         android:id="@+id/search_bar"
@@ -35,7 +35,7 @@
         android:background="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@android:drawable/ic_menu_search" />
+        android:src="@android:drawable/ic_menu_search" />
 
     <ImageView
         android:id="@+id/bg_img"
@@ -48,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@mipmap/ic_launcher" />
 
     <ImageButton
         android:id="@+id/safe_mode"
@@ -60,7 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.402"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/shield" />
 
     <ImageButton
         android:id="@+id/location"
@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/timeline" />
 
     <ImageButton
         android:id="@+id/health"
@@ -82,7 +82,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/health_kit" />
 
     <ImageButton
         android:id="@+id/timeline"
@@ -93,7 +93,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/graph" />
 
     <ImageButton
         android:id="@+id/rating"
@@ -103,27 +103,27 @@
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/location"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/shield" />
 
     <ImageButton
         android:id="@+id/stats"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toStartOf="@+id/face_detect"
+        app:layout_constraintEnd_toStartOf="@+id/feeds"
         app:layout_constraintStart_toEndOf="@+id/rating"
         app:layout_constraintTop_toBottomOf="@+id/health"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/graph" />
 
     <ImageButton
-        android:id="@+id/face_detect"
+        android:id="@+id/feeds"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timeline"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/feed_box" />
 
     <TextView
         android:id="@+id/textView"
@@ -187,12 +187,13 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FaceAuth"
+        android:layout_marginEnd="12dp"
+        android:text="Feeds"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/face_detect"
-        app:layout_constraintEnd_toEndOf="@+id/face_detect" />
+        app:layout_constraintBottom_toBottomOf="@+id/feeds"
+        app:layout_constraintEnd_toEndOf="@+id/feeds" />
 
     <TextView
         android:id="@+id/textView7"
@@ -207,5 +208,12 @@
         app:layout_constraintEnd_toEndOf="@+id/safe_mode"
         app:layout_constraintStart_toStartOf="@+id/safe_mode"
         app:layout_constraintTop_toTopOf="@+id/safe_mode" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="80dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

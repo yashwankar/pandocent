@@ -1,13 +1,13 @@
-package com.kyrs.chowkidar.ui.login
+package com.kyrs.pandocent.ui.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
-import com.kyrs.chowkidar.data.LoginRepository
-import com.kyrs.chowkidar.data.Result
+import com.kyrs.pandocent.data.LoginRepository
+import com.kyrs.pandocent.data.Result
 
-import com.kyrs.chowkidar.R
+import com.kyrs.pandocent.R
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
 
@@ -49,6 +49,6 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
 
     // A placeholder password validation check
     private fun isPasswordValid(password: String): Boolean {
-        return password.length > 5
+        return password.length > 8
     }
 }

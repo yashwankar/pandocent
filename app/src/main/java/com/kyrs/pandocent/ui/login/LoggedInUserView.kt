@@ -1,4 +1,4 @@
-package com.kyrs.chowkidar.ui.login
+package com.kyrs.pandocent.ui.login
 
 /**
  * User details post authentication that is exposed to the UI

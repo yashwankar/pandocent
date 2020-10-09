@@ -1,4 +1,4 @@
-package com.kyrs.chowkidar.ui.login
+package com.kyrs.pandocent.ui.login
 
 /**
  * Authentication result : success (user details) or error message.

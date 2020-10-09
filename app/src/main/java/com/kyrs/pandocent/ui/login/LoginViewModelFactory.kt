@@ -1,9 +1,9 @@
-package com.kyrs.chowkidar.ui.login
+package com.kyrs.pandocent.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.kyrs.chowkidar.data.LoginDataSource
-import com.kyrs.chowkidar.data.LoginRepository
+import com.kyrs.pandocent.data.LoginDataSource
+import com.kyrs.pandocent.data.LoginRepository
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

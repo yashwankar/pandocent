@@ -1,4 +1,4 @@
-package com.kyrs.chowkidar
+package com.kyrs.pandocent
 
 import org.junit.Test
 

@@ -1,6 +1,6 @@
-package com.kyrs.chowkidar.data
+package com.kyrs.pandocent.data
 
-import com.kyrs.chowkidar.data.model.LoggedInUser
+import com.kyrs.pandocent.data.model.LoggedInUser
 import java.io.IOException
 
 /**

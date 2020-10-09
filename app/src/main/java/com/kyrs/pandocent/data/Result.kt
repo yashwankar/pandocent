@@ -1,4 +1,4 @@
-package com.kyrs.chowkidar.data
+package com.kyrs.pandocent.data
 
 /**
  * A generic class that holds a value with its loading status.
