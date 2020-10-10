@@ -14,7 +14,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/usr_img" />
+        android:src="@drawable/usr_img"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/bell"
@@ -24,7 +25,8 @@
         android:background="#00FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/search_bar"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@android:drawable/ic_popup_reminder" />
+        android:src="@android:drawable/ic_popup_reminder"
+        android:scaleType="fitCenter"/>
 
     <ImageButton
         android:id="@+id/search_bar"
@@ -35,7 +37,8 @@
         android:background="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@android:drawable/ic_menu_search" />
+        android:src="@android:drawable/ic_menu_search"
+        android:scaleType="centerCrop"/>
 
     <ImageView
         android:id="@+id/bg_img"
@@ -48,7 +51,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/safe_mode"
@@ -60,7 +64,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.402"
-        android:src="@drawable/shield" />
+        android:src="@drawable/shield"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/location"
@@ -72,7 +77,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/timeline" />
+        android:src="@drawable/timeline"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/health"
@@ -82,7 +88,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/health_kit" />
+        android:src="@drawable/health_kit"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/timeline"
@@ -93,7 +100,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/graph" />
+        android:src="@drawable/graph"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/rating"
@@ -103,7 +111,8 @@
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/location"
-        android:src="@drawable/shield" />
+        android:src="@drawable/shield"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/stats"
@@ -113,7 +122,8 @@
         app:layout_constraintEnd_toStartOf="@+id/feeds"
         app:layout_constraintStart_toEndOf="@+id/rating"
         app:layout_constraintTop_toBottomOf="@+id/health"
-        android:src="@drawable/graph" />
+        android:src="@drawable/graph"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/feeds"
@@ -123,7 +133,8 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timeline"
-        android:src="@drawable/feed_box" />
+        android:src="@drawable/feed_box"
+        android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/textView"
