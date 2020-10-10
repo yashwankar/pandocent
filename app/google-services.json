@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "433795499900",
+    "firebase_url": "https://pandocent-138e7.firebaseio.com",
+    "project_id": "pandocent-138e7",
+    "storage_bucket": "pandocent-138e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433795499900:android:2a94d52ce27ec08e3406f9",
+        "android_client_info": {
+          "package_name": "com.kyrs.pandocent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433795499900-4h9431guvrb52h9bhkf0mc9dhj5taso6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kyrs.pandocent",
+            "certificate_hash": "f59851d18ff8e0c48e73673a0a04e87d5925fcfa"
+          }
+        },
+        {
+          "client_id": "433795499900-hqi013umtitslabkkvds4t86msefhtke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-wlev-86h8lhhXreh26dvbxVnP5kpZmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433795499900-hqi013umtitslabkkvds4t86msefhtke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
