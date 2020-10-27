@@ -107,7 +107,7 @@ class LoginActivity : AppCompatActivity() {
                 "$welcome $displayName",
                 Toast.LENGTH_LONG
         ).show()
-        startActivity(Intent(this, homepage_activity::class.java))
+        startActivity(Intent(this, HomepageActivity::class.java))
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
@@ -115,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun navigate(view: View) {
-        startActivity(Intent(this, homepage_activity::class.java))
+        startActivity(Intent(this, HomepageActivity::class.java))
     }
 }
 
