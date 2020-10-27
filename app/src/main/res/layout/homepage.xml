@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_bg"
     android:fitsSystemWindows="true"
-    tools:context=".ui.login.HomepageActivity"
+    tools:context=".HomepageActivity"
     tools:openDrawer="start">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -45,6 +45,7 @@
             android:layout_height="136dp"
             android:scaleType="centerCrop"
             android:src="@drawable/usr_img"
+            android:layout_marginTop="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -255,5 +256,4 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.drawerlayout.widget.DrawerLayout>
