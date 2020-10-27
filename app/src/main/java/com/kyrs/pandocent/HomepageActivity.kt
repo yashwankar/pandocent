@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.kyrs.pandocent.R
@@ -28,5 +29,12 @@ class HomepageActivity() : AppCompatActivity(), NavigationView.OnNavigationItemS
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         return false
+    }
+    override fun onBackPressed() {
+        if (side_drawer.isDrawerOpen(GravityCompat.START)) {
+            side_drawer.closeDrawer(GravityCompat.START)
+        } else {
+            super.onBackPressed()
+        }
     }
 }
