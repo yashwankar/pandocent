@@ -15,7 +15,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
-import com.kyrs.pandocent.HomepageActivity
+import com.kyrs.pandocent.dashboard
 
 import com.kyrs.pandocent.R
 
@@ -108,7 +108,7 @@ class LoginActivity : AppCompatActivity() {
                 "$welcome $displayName",
                 Toast.LENGTH_LONG
         ).show()
-        startActivity(Intent(this, HomepageActivity::class.java))
+        startActivity(Intent(this, dashboard::class.java))
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
@@ -116,7 +116,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun navigate(view: View) {
-        startActivity(Intent(this, HomepageActivity::class.java))
+        startActivity(Intent(this, dashboard::class.java))
     }
 }
 
