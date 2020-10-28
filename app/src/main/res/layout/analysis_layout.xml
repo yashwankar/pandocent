@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F8FB"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        android:textColor="#EDEEEF"
+        android:background="#000000"
+        android:text="Self Analysis Test" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text=""/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="185dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/cherry_stopping_covid_19" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/flame_458" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="262dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/taxi_sad_boy_wearing_protection_mask_1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="407dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Q1. Are you feeling sick today?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Q2. Have you been to your workplace today?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Q3. Where you feeling sick when you were there?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Q4. Did your symptoms require you to go to the hospital?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Q5. Was there a need for you to be on a ventilator during your hospital stay?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:padding="5dp"
+                android:text=" Q6. Do you smoke?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Q7. Have you had COVID-19 tests?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Q8. Are you comfortable communicating with us about your symptoms?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Q9. Do you have any caretaker Who usually helps take care of you when you are sick?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" Q10. Have you told them about your COVID-19 diagnosis?"
+                android:textColor="#3F51B5"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/y10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#24B62A"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/n10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FD0E0E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="#F3685E"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="24dp" />
+
+
+
+
+</LinearLayout>

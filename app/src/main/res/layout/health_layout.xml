@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/quiz"
+        android:id="@+id/textview8"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="HEALTH PAGE"
@@ -26,7 +26,7 @@
         app:srcCompat="@drawable/flame_the_man_got_sick" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/quiz"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
