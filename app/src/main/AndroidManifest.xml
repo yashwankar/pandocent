@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.kyrs.pandocent.HomepageActivity" />
+        <activity android:name=".health_activity"/>
     </application>
 
 </manifest>

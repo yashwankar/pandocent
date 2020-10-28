@@ -1,5 +1,6 @@
 package com.kyrs.pandocent
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
@@ -24,6 +25,12 @@ class HomepageActivity() : AppCompatActivity(), NavigationView.OnNavigationItemS
         side_drawer.addDrawerListener(toggle)
         toggle.syncState()
         nav_view.setNavigationItemSelectedListener(this)
+
+        health.setOnClickListener(){
+        val intent = Intent(this,health_activity::class.java)
+          startActivity(intent)
+        }
+
 
     }
 
