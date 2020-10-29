@@ -37,6 +37,8 @@ class dashboard() : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         }
         timeline.setOnClickListener {
             Toast.makeText(this, "Please Visit different locations\n to generate Timeline !", Toast.LENGTH_LONG).show()
+            var uri = Uri.parse("https://www.bing.com/covid/local/india")
+            startActivity(Intent(Intent.ACTION_VIEW, uri))
         }
 
         location.setOnClickListener {
@@ -80,6 +82,7 @@ class dashboard() : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             super.onBackPressed()
         }
     }
+
 
     fun openstats(view: View) {
         var uri = Uri.parse("https://www.covid19india.org/")
