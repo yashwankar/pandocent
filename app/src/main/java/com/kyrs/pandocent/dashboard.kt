@@ -35,6 +35,9 @@ class dashboard() : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         textView7.setOnClickListener {
             Toast.makeText(this, "You are SAFE", Toast.LENGTH_LONG).show()
         }
+        timeline.setOnClickListener {
+            Toast.makeText(this, "Please Visit different locations\n to generate Timeline !", Toast.LENGTH_LONG).show()
+        }
 
         location.setOnClickListener {
             val gmmIntentUri = Uri.parse("geo:23.0775365,76.8490828")
@@ -59,7 +62,15 @@ class dashboard() : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        return false
+        when(item.itemId)
+        {
+            R.id.nav_profile-> toasting()
+        }
+        return true
+    }
+
+    private fun toasting() {
+        Toast.makeText(this, "Hello", Toast.LENGTH_LONG).show()
     }
 
     override fun onBackPressed() {
