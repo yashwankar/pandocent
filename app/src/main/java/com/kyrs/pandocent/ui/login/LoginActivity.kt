@@ -18,6 +18,7 @@ import android.widget.Toast
 import com.kyrs.pandocent.dashboard
 
 import com.kyrs.pandocent.R
+import com.kyrs.pandocent.new_register
 
 class LoginActivity : AppCompatActivity() {
 
@@ -117,6 +118,10 @@ class LoginActivity : AppCompatActivity() {
 
     fun navigate(view: View) {
         startActivity(Intent(this, dashboard::class.java))
+    }
+
+    fun register(view: View) {
+        startActivity(Intent(this, new_register::class.java))
     }
 }
 
