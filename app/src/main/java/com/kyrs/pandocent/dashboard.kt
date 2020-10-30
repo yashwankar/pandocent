@@ -36,8 +36,12 @@ class dashboard() : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             Toast.makeText(this, "You are SAFE", Toast.LENGTH_LONG).show()
         }
         timeline.setOnClickListener {
-            Toast.makeText(this, "Please Visit different locations\n to generate Timeline !", Toast.LENGTH_LONG).show()
-            var uri = Uri.parse("https://www.bing.com/covid/local/india")
+            Toast.makeText(
+                this,
+                "Please Visit different locations\n to generate Timeline !",
+                Toast.LENGTH_LONG
+            ).show()
+            var uri = Uri.parse("https://bing.com/covid/local/india?vert=graph")
             startActivity(Intent(Intent.ACTION_VIEW, uri))
         }
 
@@ -64,9 +68,8 @@ class dashboard() : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when(item.itemId)
-        {
-            R.id.nav_profile-> toasting()
+        when (item.itemId) {
+            R.id.nav_profile -> toasting()
         }
         return true
     }
