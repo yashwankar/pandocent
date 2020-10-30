@@ -1,42 +1,41 @@
 package com.kyrs.pandocent
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
+import com.kyrs.pandocent.ui.login.LoginActivity
+import kotlinx.android.synthetic.main.new_registration.*
 
 class new_register : AppCompatActivity() {
-//    lateinit var fullname:EditText
-//    lateinit var username:EditText
-////    lateinit var email:EditText
-////    lateinit var phoneno:EditText
-////    lateinit var pwd:EditText
-//    lateinit var gobtn:Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.new_registration)
-//        fullname=findViewById(R.id.reg_full_name)
-//        username=findViewById(R.id.reg_username)
-//        email=findViewById(R.id.reg_email)
-//        phoneno=findViewById(R.id.reg_phone)
-//        pwd=findViewById(R.id.reg_pwd)
-//        gobtn=findViewById(R.id.reg_go)
-//
-//        gobtn.setOnClickListener {
-//            update()
-//        }
-
-
+        reg_go.setOnClickListener {
+            writeNewUser()
+            finish()
+        }
     }
-//
-//    private fun update() {
-//        val name=fullname.text.toString().trim()
-//
-//        val ref = FirebaseDatabase.getInstance().getReference("users")
-//        val userid=ref.push().key
-//        val new_usr=users(fullname,username)
-//        ref.child(new_usr).setValue(userid)
 
+    private fun writeNewUser() {
+
+        val database = FirebaseDatabase.getInstance()
+        val myRef = database.getReference("users")
+        var usrID = reg_username.editText?.text.toString()
+        if (usrID=="")
+        {
+            usrID="blank"
+        }
+        myRef.child(usrID).child("fullname").setValue(reg_full_name.editText?.text.toString())
+        myRef.child(usrID).child("username").setValue(reg_username.editText?.text.toString())
+        myRef.child(usrID).child("email").setValue(reg_email.editText?.text.toString())
+        myRef.child(usrID).child("phone").setValue(reg_phone.editText?.text.toString())
+        myRef.child(usrID).child("pwd").setValue(reg_pwd.editText?.text.toString())
+        startActivity(Intent(this,LoginActivity::class.java))
+    }
 }
+
+
