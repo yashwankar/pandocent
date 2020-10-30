@@ -25,7 +25,7 @@ class SplashScreen() : AppCompatActivity() {
         splash_name.startAnimation(bottomAnim)
         splash_moto.startAnimation(bottomAnim)
 
-        val SPLASH_TIME_OUT:Long=3000
+        val SPLASH_TIME_OUT:Long=10000
         Handler().postDelayed({
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
